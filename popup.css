@@ -1,0 +1,100 @@
+
+:root {
+  --bg-color: #111827;
+  --card-bg-color: #1f2937;
+  --text-color: #d1d5db;
+  --text-light-color: #9ca3af;
+  --accent-color: #4f46e5;
+  --accent-hover-color: #6366f1;
+  --border-color: #374151;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  width: 380px;
+  height: auto;
+}
+
+#root {
+  padding: 16px;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c7d2fe;
+  margin: 0;
+}
+
+.header p {
+  font-size: 0.875rem;
+  color: var(--text-light-color);
+  margin-top: 4px;
+}
+
+.share-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.social-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.social-button .icon {
+  width: 28px;
+  height: 28px;
+  color: var(--text-light-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.social-button:hover .icon {
+  color: white;
+}
+
+.social-button .name {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.social-button:hover .name {
+  color: white;
+}
+
+.loader {
+  text-align: center;
+  padding: 40px;
+  font-size: 0.875rem;
+  color: var(--text-light-color);
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Izy Share",
+  "description": "A fast and beautiful web application to generate sharing links for any URL or text. Paste your content and share it across platforms like X, Facebook, LinkedIn, and more, instantly. This is a web-based implementation of the ShareHub Rápido concept.",
+  "requestFramePermissions": []
+}
